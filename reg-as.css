@@ -1,0 +1,24 @@
+.reg-as {
+    display: inline-grid;
+    grid-template-columns: min-content auto;
+    grid-gap: 10px;
+}
+
+.reg-as>* {
+    align-self: center;
+    justify-self: left;
+}
+
+.reg-as-labl {
+    grid-column: 1/3;
+}
+
+.rad-lbl {
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.nxt_arrw {
+    height: 20px;
+    size: cover;
+}

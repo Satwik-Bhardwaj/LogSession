@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Ubuntu&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.body {
+    min-height: 100vh;
+    min-width: min-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000000;
+    padding: 3%;
+}
+
+.log-card {
+    height: min-content;
+    width: min-content;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 30px;
+    border: 1px solid #494949;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: height 0.5s;
+}
+
+.card-nav label {
+    font-size: 30px;
+}
+
+.card-slate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-slate>* {
+    margin: 10px 0px;
+}
+
+.card-slate>input {
+    font-size: 16px;
+    font-weight: 300;
+    width: 320px;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px;
+    border: 1px solid #494949;
+    border-radius: 30px;
+}
+
+.card-slate>input:focus {
+    outline: none;
+    border-color: #6d00d3;
+}
+
+.card-slate>a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.card-slate>a:hover {
+    color: #6d00d3;
+}
+
+.rem-pass {
+    display: flex;
+    align-items: center;
+}
+
+.rem-pass>label {
+    font-size: 14px;
+    margin: 0px 10px;
+    font-weight: 300;
+}
+
+.submittion {
+    margin: 10px 0px;
+}
+
+.submittion>button {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    font-size: 12px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 30px;
+}
+
+.submittion button:hover {
+    background-color: #6d00d3;
+    color: #ffffff;
+}
+
+hr.seg {
+    height: 1px;
+    background-color: #494949;
+    border: none;
+    margin: 10px 0px;
+}
+
+.moder {
+    background-color: transparent;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.moder:hover {
+    color: #6d00d3;
+}
+
+.sign-mode {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 0px;
+    transition: 1s;
+}
+
+#glg-mode {
+    opacity: 0%;
+    background-image: url(googlelogo.png);
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border: 2px solid transparent;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#glg-mode:hover {
+    border-color: #6d00d3;
+}
+
+.AskForSignUp {
+    margin: 20px;
+    color: #ffffff;
+}
+
+.AskForSignUp>a {
+    color: inherit;
+}
+
+.AskForSignUp>a:hover {
+    color: #6d00d3;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="des.css">
+    <link rel="stylesheet" href="reg-as.css">
+</head>
+
+<body>
+    <div class="body">
+        <div class="log-card" id="log-card">
+            <div class="make-form">
+                <div class="card-nav">
+                    <label>Sign up</label>
+                </div>
+                <form>
+                    <div class="card-slate">
+                        <input type="text" placeholder="Full Name" required/>
+                        <input type="email" placeholder="Email" required/>
+                        <input type="text" placeholder="Registration number" required/>
+                        <div class="reg-as">
+                            <label class="reg-as-labl">Register as</label>
+                            <input type="radio" name="register-as" required><label class="rad-lbl">Faculty</label>
+                            <input type="radio" name="register-as"><label class="rad-lbl">Student</label>
+                            <!-- <input type="password" placeholder="Password" required/>
+                            <input type="password" placeholder="Confirm Password" required/> -->
+                        </div>
+                    </div>
+                    <div class="card-slate"></div>
+                    <div class="submittion">
+                        <button onclick=""><label>Next</label>
+                    </div>
+                    <hr class="seg">
+                    <button onmouseover="FallForMode()" class="moder">Different way of Signing up</button>
+                        <div class="sign-mode" id="sign-mode">
+                            <figure class="glg-mode" id="glg-mode"></figure>
+                        </div>
+                </form>
+                </div>
+            </div>
+            <div class="AskForSignUp">
+                <a href="index.html">Already been a part? Sign-in here</a>
+            </div>
+        </div>
+
+        <script async defer>
+            var sign_mat = document.getElementById("sign-mode");
+            var glg_mode = document.getElementById("glg-mode");
+            var a = 0;
+
+            function FallForMode() {
+                if (a == 0) {
+                    sign_mat.style.height = "90px";
+                    glg_mode.style.opacity = "100%";
+                    a = 1;
+                } else {
+                    sign_mat.style.height = "0px";
+                    glg_mode.style.opacity = "0%";
+                    a = 0;
+                }
+            }
+        </script>
+</body>
+
+</html>
